@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English|UnifrakturMaguntia&display=swap');
 html {
   box-sizing: border-box;
-  background: #ffc600;
-  font-family: 'helvetica neue';
+  background: url(/assets/castlebackground.jpg);
+  background-size: cover;
   font-size: 20px;
   font-weight: 200;
 }
@@ -21,9 +22,9 @@ body {
 }
 
 .panel {
-  background: #6B0F9C;
-  box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 0 5px rgba(31, 4, 4, 0.071);
   color: white;
+  font-family: 'IM Fell English';
   text-align: center;
   align-items: center;
   /* Safari transitionend event.propertyName === flex */
@@ -42,11 +43,11 @@ body {
   flex-direction: column;
 }
 
-.panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
+/* .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
 .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
 .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
 .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-.panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+.panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); } */
 
 /* Flex Children */
 .panel > * {
@@ -76,8 +77,6 @@ body {
 }
 
 .panel p {
-  text-transform: uppercase;
-  font-family: 'Amatic SC', cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   font-size: 2em;
 }
@@ -86,6 +85,10 @@ body {
   font-size: 4em;
 }
 
+.panel h1 {
+  text-transform: lowercase;
+  font-family: 'UnifrakturMaguntia';
+}
 .panel.open {
   font-size: 40px;
   flex: 5;
